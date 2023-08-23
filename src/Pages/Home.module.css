@@ -1,0 +1,18 @@
+.h{
+    color: var(--cor-h);
+}
+
+
+@media screen and (max-width: 600px) {
+    .h{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .h{
+        font-size: 20px;
+        text-align: center;
+        white-space: pre-wrap;
+    }
+}

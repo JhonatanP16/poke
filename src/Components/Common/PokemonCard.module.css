@@ -1,0 +1,140 @@
+.contentCard{
+    width: 250px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    position: relative;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.backDrop{
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+}
+
+.fondo{
+    border-radius: 15px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    background: var(--cor-card);
+    backdrop-filter: saturate(180%) blur(40px);
+}
+.contentCard .actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentCard .actions svg{
+    font-size: 18px;
+    transition: ease all 0.5s;
+}
+.actions svg.plus{
+    font-size: 30px;
+    color: #f1b229;
+}
+.actions svg:hover{
+    transform: scale(1.5);
+}
+.actions svg.ubuntu{
+    color: rgba(255, 188, 63, 0.904);
+}
+.contentCard .imgContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.contentCard .imgContent img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    filter: drop-shadow(20px 10px 10px rgba(20, 18, 18, 0.5058823529));
+    transition: all ease 0.5s;
+}
+.contentCard .imgContent:hover img{
+    transform: scale(1.2);
+}
+.contentCard p{
+    font-size: 18px;
+    text-align: center;
+    color: var(--cor-text);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.contentCard .typesContent{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.contentCard .typesContent .typesCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: auto;
+}
+.typesCard img{
+    width: 35px;
+}
+.typesCard h6{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor-text);
+}
+
+@media screen and (max-width: 500px) {
+    .contentCard{
+        width: 150px;
+        padding: 0.5rem 0.3rem;
+        margin-top: 1rem;
+    }
+    .contentCard .actions svg{
+        font-size: 12px;
+    }
+    .actions svg.plus{
+        font-size: 20px;
+    }
+    .contentCard .imgContent{
+        margin-top: 2px;
+    }
+    .contentCard .imgContent img{
+        width: 150px;
+        height: 150px;
+    }
+    .typesContent{
+        margin-top: 0.3rem;
+    }
+    .typesCard img{
+        width: 25px;
+    }
+    .typesCard h6{
+        font-size: 11px;
+    }
+    .contentCard p{
+        font-size: 13px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

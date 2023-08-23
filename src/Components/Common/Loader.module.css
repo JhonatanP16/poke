@@ -1,0 +1,15 @@
+.imgContent{
+    width: 100%;
+    height: calc(100vh - 2rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgContent img{
+    width: 200px;
+}
+@media screen and (max-width: 500px) {
+    .imgContent img{
+      width: 150px;
+    }
+}

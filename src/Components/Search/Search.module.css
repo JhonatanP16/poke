@@ -1,0 +1,35 @@
+.content{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.content form{
+    border-radius: 15px;
+    position: relative;
+}
+.content form input{
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.5rem 2rem;
+}
+.content form input{
+    color: var(--cor-h);
+}
+.content form .icon{
+    position: absolute;
+    left: 10px;
+    color: #DC0A2D;
+    top: 8px;
+}
+@media screen and (max-width: 900px) {
+    .content{
+        grid-column: span 2 / span 2;
+        grid-row-start: 2;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    form{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,29 @@
+.contentList{
+    width: 100%;
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 993px) {
+    .contentList{
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .contentList{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contentList{
+        width: 100%;
+        place-items: center;
+        grid-gap: 2px;
+        margin-top: 0.2rem;
+    }
+}

@@ -1,0 +1,15 @@
+.content{
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+.content button svg{
+    font-size: 20px;
+    color: #fff;
+}
+@media screen and (max-width: 900px) {
+    .content{
+       margin-left: auto;
+    }
+    
+}

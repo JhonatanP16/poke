@@ -1,0 +1,86 @@
+.contentPokemon{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contentPokemon .buttons{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentPokemon .buttons p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: var(--cor-text);
+}
+.contentPokemon .buttons button{
+    color: var(--cor-text);
+    font-size: 20px;
+}
+.contentPokemon .buttons button:disabled{
+    opacity: 0.1;
+}
+.containerCircle{
+    width: 24rem;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--accent-color);
+    border-radius: 50%;
+}
+.otherCircle{
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.otherCircle img{
+    height: 17rem;
+    object-fit: cover;
+    background-size: cover;
+    filter: drop-shadow(20px 10px 10px rgba(20, 18, 18, 0.5058823529));
+    z-index: 10;
+}
+.lines{
+    position: absolute;
+    display: flex;
+    gap: 3rem;
+    z-index: 1;
+}
+.lines .line{
+    height: 28rem;
+    width: 0.3rem;
+    background-color: var(--accent-color);
+    transform: rotate(45deg);
+}
+@media screen and (max-width: 500px) {
+    .contentPokemon .buttons p{
+        font-size: 15px;
+    }
+    .contentPokemon .buttons button{
+        font-size: 15px;
+    }
+    .containerCircle{
+        width: 20rem;
+        height: 20rem;
+    }
+    .otherCircle{
+        width: 18rem;
+        height: 18rem;
+    }
+    .lines .line{
+        height: 24rem;
+    }
+    .otherCircle img{
+        height: 12rem;
+    }
+}

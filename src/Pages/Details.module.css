@@ -1,0 +1,17 @@
+.content{
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+
+}
+.content .containerDetails{
+    width: 100%;
+    display: flex;
+    position: relative;   
+}
+@media screen and (max-width: 900px) {
+    .containerDetails{
+        display: flex;
+        flex-direction: column;
+    }
+}
